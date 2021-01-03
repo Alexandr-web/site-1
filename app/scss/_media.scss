@@ -125,11 +125,11 @@
         }
         &__list-block {
             flex-direction: column;
+            &:nth-child(even) {
+                flex-direction: column;
+            }
             &:first-child {
                 margin-top: 80px;
-            }
-            &-text {
-                order: -1;
             }
             &-heading h2 {
                 margin: 30px 0 40px;

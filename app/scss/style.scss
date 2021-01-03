@@ -122,9 +122,8 @@
         }
     }
     &__list-instruction {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(800px, auto);
+        display: flex;
+        flex-direction: column;
     }
     &__list-block {
         display: flex;
@@ -133,8 +132,8 @@
         &:first-child {
             margin-top: 59px;
         }
-        &-img:nth-child(even) {
-            order: 1;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
         }
         &-text {
             max-width: 568px;
